@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alexander Takamoto • Portfolio</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons for contact section -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Smooth scrolling and offset for fixed navbar -->
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      padding-top: 70px; /* Height of navbar */
+    }
+  </style>
+</head>
+<body id="top">
+
+  <!-- Sticky Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#top">Alexander Takamoto</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#top">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- About Section -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <h1 class="text-center mb-4">About</h1>
+      <div class="d-flex justify-content-center mb-4">
+        <img src="images/about/1.jpg" alt="My Photo" class="img-fluid"
+             style="max-width:300px; border-radius:20px;" />
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <p class="text-center">I'm Alexander Takamoto, a Data Science student at UC San Diego (Class of 2027) with a minor in Economics and a 3.95 GPA. I’m passionate about responsible AI and data-driven problem solving.</p>
+          <p class="text-center">Currently, I'm researching fairness-aware graph neural networks at Onizuka Lab, studying trade-offs between accuracy and equity. I’ve also worked with GeoPandas to build interactive accessibility maps and developed predictive models ranging from exoplanet habitability to healthcare satisfaction.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-5">
+    <div class="container">
+      <h1 class="text-center mb-4">Projects</h1>
+      <div class="row gy-4 justify-content-center">
+        <div class="col-md-4">
+          <div class="card h-100 text-center border-0">
+            <img src="images/projects/1.jpg" class="card-img-top rounded w-100" alt="Project 1"
+                 style="height:200px; object-fit:cover;">
+            <div class="card-body">
+              <h5 class="card-title">Esports Win-Loss Predictor</h5>
+              <p class="card-text">Built a Random Forest model on 150K+ rows of League of Legends match data, performing feature engineering, permutation tests, and fairness evaluation to achieve 75.7% accuracy.</p>
+            </div>
+            <div class="card-footer bg-transparent border-0">
+              <div class="fw-bold"><a href="https://atakamoto.github.io/LOL-Esports_WL_Classification/" class="text-decoration-none">Website</a> | <a href="https://github.com/Atakamoto/LOL-Esports_WL_Classification" class="text-decoration-none">Source Code</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 text-center border-0">
+            <img src="images/projects/2.jpg" class="card-img-top rounded w-100" alt="Project 2"
+                 style="height:200px; object-fit:cover;">
+            <div class="card-body">
+              <h5 class="card-title">UCSD Building Occupancy Tracker</h5>
+              <p class="card-text">Developed an AWS Lambda and Google Sheets pipeline to ingest real-time JSON data, normalize it, and display live occupancy maps in a centralized dashboard.</p>
+            </div>
+            <div class="card-footer bg-transparent border-0">
+              <div class="fw-bold"><a href="https://github.com/Atakamoto/UCSD-Building-Occupancy-Tracker" class="text-decoration-none">Source Code</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 text-center border-0">
+            <img src="images/projects/3.jpg" class="card-img-top rounded w-100" alt="Project 3"
+                 style="height:200px; object-fit:cover;">
+            <div class="card-body">
+              <h5 class="card-title">Exoplanet Habitability Tool</h5>
+              <p class="card-text">Built a Streamlit app using logistic regression to classify exoplanets by astrophysical features, with interactive sliders and live probability outputs.</p>
+            </div>
+            <div class="card-footer bg-transparent border-0">
+              <div class="fw-bold"><a href="https://exoplanet-habitability-evaluator.streamlit.app/" class="text-decoration-none">Streamlit</a> | <a href="https://github.com/Atakamoto/Exoplanet-Habitability-Evaluator" class="text-decoration-none">Source Code</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-5">
+    <div class="container">
+      <h1 class="text-center mb-4">Skills</h1>
+      <div class="row gy-4 justify-content-center">
+        <div class="col-12 col-sm-6 col-md-3 text-center">
+          <img src="images/skills/1.png" alt="Python" class="d-block mx-auto mb-3"
+               style="width:80px; height:80px; object-fit:contain;">
+          <h5>Python & Java & R</h5>
+          <p>Proficient in Python, Java, and R for statistical modeling, data processing, and analysis.</p>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 text-center">
+          <img src="images/skills/2.png" alt="Data Visualization" class="d-block mx-auto mb-3"
+               style="width:80px; height:80px; object-fit:contain;">
+          <h5>Data Visualization</h5>
+          <p>Experienced with Pandas, NumPy, Matplotlib, and Seaborn for creating insightful charts and dashboards.</p>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 text-center">
+          <img src="images/skills/3.png" alt="SQL" class="d-block mx-auto mb-3"
+               style="width:80px; height:80px; object-fit:contain;">
+          <h5>SQL & Data Management</h5>
+          <p>Skilled in database design and querying using SQL and data management best practices.</p>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 text-center">
+          <img src="images/skills/4.png" alt="Data Storytelling" class="d-block mx-auto mb-3"
+               style="width:80px; height:80px; object-fit:contain;">
+          <h5>GIS & Storytelling</h5>
+          <p>Built interactive maps with GeoPandas and crafted data narratives for public health and policy insights.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5 bg-dark">
+    <div class="container">
+      <h1 class="text-center text-white mb-4">Contact Me</h1>
+      <div class="row justify-content-center g-4">
+        <div class="col-auto">
+          <div class="d-flex align-items-center text-white">
+            <i class="bi bi-envelope-fill fs-3 me-2"></i>
+            <span class="fs-5">alextakamoto116@gmail.com</span>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center mt-4 g-4">
+        <div class="col-auto text-center">
+          <a href="https://www.linkedin.com/in/alexander-takamoto/" class="text-white text-decoration-none">
+            <img src="icons/linkedin.png" alt="LinkedIn" class="img-fluid mb-2"
+                 style="width:60px; height:60px; object-fit:contain;">
+            <div>LinkedIn</div>
+          </a>
+        </div>
+        <div class="col-auto text-center">
+          <a href="https://github.com/Atakamoto" class="text-white text-decoration-none">
+            <img src="icons/github.png" alt="GitHub" class="img-fluid mb-2" style="width:60px; height:60px; object-fit:contain;">
+            <div>GitHub</div>
+          </a>
+        </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
